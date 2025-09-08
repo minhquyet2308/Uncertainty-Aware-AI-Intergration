@@ -1,0 +1,46 @@
+cv:
+  keep_balance: false
+  mode: element
+  n_repeats: 1
+  n_splits: 1
+dst:
+  alpha: 0.01
+  baseline_estimator: random
+  version: v1
+input_path:
+  calculations: ../data/HEA/HEA_data.IMCN.quaternaries_0.9Tm.csv
+  candidates: ../data/HEA/HEA_data.IMCN.quaternaries_0.9Tm.csv
+  mask_matrix: ../data/HEA/mask_matrix.parquet
+  n_element:
+  - 4
+name: IMCN.quaternaries_0.9Tm
+output_path: ../output/HEA/GPT/Evaluations/all
+predicting_variables:
+- Ag
+- Al
+- As
+- Au
+- Co
+- Cr
+- Cu
+- Fe
+- Hf
+- Ir
+- Mn
+- Mo
+- Nb
+- Ni
+- Os
+- Pd
+- Pt
+- Re
+- Rh
+- Ru
+- Si
+- Ta
+- Ti
+- V
+- W
+- Zr
+scoring:
+  f1_macro: f1_macro

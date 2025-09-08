@@ -1,0 +1,74 @@
+cv:
+  keep_balance: false
+  mode: element
+  n_repeats: 10
+  n_splits: 1
+  params:
+  - Ag
+  - Al
+  - As
+  - Au
+  - Co
+  - Cr
+  - Cu
+  - Fe
+  - Hf
+  - Ir
+  - Mn
+  - Mo
+  - Nb
+  - Ni
+  - Os
+  - Pd
+  - Pt
+  - Re
+  - Rh
+  - Ru
+  - Si
+  - Ta
+  - Ti
+  - V
+  - W
+  - Zr
+dst:
+  alpha: 0.01
+  baseline_estimator: random
+  version: v1
+input_path:
+  calculations: ../data/HEA/HEA_data.IMCN.quaternaries_0.9Tm.csv
+  candidates: ../data/HEA/HEA_data.IMCN.quaternaries_0.9Tm.csv
+  mask_matrix: None
+  n_element:
+  - 4
+  expert_knowledge: "../data/AI_experts_knowledge.npy"
+name: IMCN.quaternaries_0.9Tm
+output_path: ../output/HEA/GPT/Evaluations/f1_macro
+predicting_variables:
+- Ag
+- Al
+- As
+- Au
+- Co
+- Cr
+- Cu
+- Fe
+- Hf
+- Ir
+- Mn
+- Mo
+- Nb
+- Ni
+- Os
+- Pd
+- Pt
+- Re
+- Rh
+- Ru
+- Si
+- Ta
+- Ti
+- V
+- W
+- Zr
+scoring:
+  f1_macro: f1_macro
