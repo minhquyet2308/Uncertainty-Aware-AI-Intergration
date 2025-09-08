@@ -63,4 +63,4 @@ The configuration files in the data/IMCN_quaternary_0.9Tm/ directory define the 
 * Ensure the dataset and configuration files are correctly placed in the data/IMCN_quaternary_0.9Tm/ directory before running experiments.
 * For cluster runs, verify that your Slurm environment is properly configured with Apache Spark dependencies.
 * If you encounter issues, check the Python environment for missing dependencies or consult the requirements.txt file.
-For further details or to access the datasets, refer to the Zenodo link [to be provided].
+For further details or to access the datasets, refer to the Zenodo link [https://zenodo.org/records/17074832].
